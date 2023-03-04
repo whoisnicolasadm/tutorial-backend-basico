@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('pages', path.join(__dirname, 'pages'));
 
 mg.set('strictQuery', true);
-mg.connect("mongodb+srv://newUser123:newUser123@cluster0.mpxhhxs.mongodb.net/?retryWrites=true&w=majority")
+mg.connect("LINK DO BANCO DE DADOS")
 
 app.get('/', (req, res) => {
   res.render('pages/home/home.ejs');
